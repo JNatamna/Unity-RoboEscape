@@ -1,1 +1,5 @@
 # Unity-RoboEscape
+
+RoboEscape is a game I created with the Unity Engine for my final exam in Game AI which was a subject part of the curriculum in my Bachelor. The premise of the game is to escape the robot factory without getting caught by the AI. The systems in place is coded from the ground and up by me which means Unity's own systems for AI pathfinding like NavMesh was not used. The game uses A* pathfinding to make Kyle (the PC) find the quickest path to the user's desired location. You can do this by clicking on a valid position on a grid. The AI themselves that try to catch Kyle uses different algorithms for their behavior. If Kyle is seen by the patrols then they will walk/seek directly towards him unless a wall is in the way. An obstacle avoidance pattern is in place that will make sure the AI runs around the walls and not through them. This was done partially by using Unity's RayCast system. AI will otherwise walk around in set positions or random targets like a Wanderer.
+
+Main logic & scripts can be found [here](https://github.com/JNatamna/Unity-RoboEscape/tree/main/Assets/Scripts)
